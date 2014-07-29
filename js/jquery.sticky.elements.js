@@ -10,14 +10,16 @@ var objx;
 		$.each(this, function(index, obj) {
 			var $this = $(obj);
 			
-			if (typeof options.floor == 'undefined') {
+			if (typeof options.floor == 'undefined')
 				options.floor = $this.position().top;
-			}
 
 			if (typeof options.cieling == 'undefined') {
 				// -10 keeps things safe
 				options.cieling = $this.outerHeight()*(-1) - 10; 
 			}
+
+			if (typeof options.rate == 'undefined')
+				options.rate = 1;	//Normal scroll
 
 			var $prop = options;
 			$(window).scroll(function() {
@@ -48,20 +50,15 @@ var objx;
 					npos = $prop.floor;
 				}
 				$this.css("top", npos +"px");
+
 				if (typeof $prop.trans != 'undefined'
 					&& $prop.trans == true) {
+					// Transparency as one move up
 					$this.css("opacity", 1 - (($prop.floor - npos) / ($prop.floor - $prop.cieling)));
 				}
 				$this.attr("lp", cp);
 			});
 		});
 		
-	}
-	
-	$.fn.stikify.defaults = {
-		height: 0,
-		floor: 10,
-		cieling: -100,
-		rate: 5
 	}
 }( jQuery ));
