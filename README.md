@@ -19,9 +19,9 @@ just include jQuery, our stiky element plugin & you have just `stikified` it!
 
 
 ```js
-$("#grid4").stikify({floor: 100, rate: 1.6, cieling: -100, trans: true});
+$("#grid4").stikify({floor: 100, rate: 1.6, cieling: -100, trans: true, rate: 3.4});
 ```
 means:
- - ``
+ - The grid `id - grid4` will not go below 100px height, above -100px height, will get transparent with scroll. Its `scroll-rate` will be `3.4` **times** normal scroll!
  
- under development
+#### For any queries mail me to minhazav@gmail.com
