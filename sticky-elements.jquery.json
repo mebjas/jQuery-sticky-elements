@@ -1,9 +1,10 @@
 {
-    "name": "sticky divs",
+    "name": "sticky-elements",
     "title": "jQuery sticky elements",
     "description": "jQuery plugin for easily implementing scroll rate, upperbound & lower bound for translation during scroll! Very handy for creating parallax effects",
     "keywords": [
-        "scroll speed",
+        "scroll",
+        "speed",
         "parallax",
         "sticky",
         "upperbound",
