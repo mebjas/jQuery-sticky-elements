@@ -39,6 +39,7 @@ var objx;
 				var cpos = parseInt($this.css("top"));
 				if (isNaN(cpos))
 					cpos = options.floor;
+				
 
 				var npos = cpos + dy / $prop.rate;
 
