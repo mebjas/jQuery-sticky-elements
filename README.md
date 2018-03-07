@@ -5,7 +5,11 @@ jquery plugin to create sticky elements -- worrying how to keep your `div`
 at position you want, want to create rules for it to stay & hide, `jQuery-sticky-elements` is 
 made just for you.
 
-[View Demo](https://php-minhaz.rhcloud.com/samples/jquery-sticky-elements/)
+[View Demo](https://minhazav.xyz/samples/jquery-sticky-elements/)
+
+**Screenshot**
+![Screenshot](https://preview.ibb.co/cCzA07/Capture.png)
+
 =============
 
 How to use
