@@ -5,7 +5,7 @@ jquery plugin to create sticky elements -- worrying how to keep your `div`
 at position you want, want to create rules for it to stay & hide, `jQuery-sticky-elements` is 
 made just for you.
 
-[View Demo](https://minhazav.xyz/samples/jquery-sticky-elements/)
+[View Demo](https://blog.minhazav.dev/research/jquery-sticky-elements)
 
 **Screenshot**
 ![Screenshot](https://preview.ibb.co/cCzA07/Capture.png)
@@ -14,7 +14,11 @@ made just for you.
 
 How to use
 =============
+Checkout the [demo page](https://blog.minhazav.dev/research/jquery-sticky-elements) on more details on how to use.
+
 ```html
+<div id="grid5"> some content here </div>
+
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/jquery.sticky.elements.js"></script>
 <script type="text/javascript">
@@ -22,13 +26,14 @@ How to use
 </script>
 ```
 
-just include jQuery, our stiky element plugin & you have just `stikified` it!
-
+just include jQuery, our sticky element plugin & you have just `stikified` it!
 
 ```js
-$("#grid4").stikify({floor: 100, rate: 1.6, cieling: -100, trans: true, rate: 3.4});
+$("#grid4").stikify({
+	floor: 100,		// the height at which the items starts to scroll
+	rate: 1.6,		// speed corresponding to scroll
+	cieling: -100,	// max height (pixel) that the item can move up.
+	trans: true,	// transparency with scroll
+});
 ```
-means:
- - The grid `id - grid4` will not go below 100px height, above -100px height, will get transparent with scroll. Its `scroll-rate` will be `3.4` **times** normal scroll!
- 
-#### For any queries mail me to minhazav@gmail.com
+
